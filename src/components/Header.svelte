@@ -1,12 +1,12 @@
 <script>
+    // Exporting props
     export let y;
     export let innerHeight;
 
+    // Tabs for navigation
     export let tabs = [
         { name: "About me", link: "#about" },
-        { name: "Projects ", link: "#projects" },
-        // { name: "Contact", link: "" },
-        // {name: '', link: ''},
+        { name: "Projects", link: "#projects" },
     ];
 </script>
 
@@ -16,9 +16,11 @@
             ? " py-4 bg-black border-blue-700"
             : " py-6 bg-transparent border-transparent")}
 >
+    <!-- Header Title -->
     <h1 class="font-medium">
         <b class="font-bold poppins">Chris Jen Ian D. Roa</b>
     </h1>
+    <!-- Navigation Tabs -->
     <div class="sm:flex items-center gap-4 hidden">
         {#each tabs as tab, index}
             <a
@@ -29,6 +31,7 @@
                 <p>{tab.name}</p>
             </a>
         {/each}
+        <!-- Get in touch button -->
         <a href="#social-info" class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-black text-white">
             <div
                 class="absolute top-0 right-full w-full h-full bg-blue-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
