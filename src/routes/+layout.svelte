@@ -18,7 +18,7 @@
 >
   <!-- Scroll to top button -->
   <div
-      class={"fixed bottom-0 right-4 m-4 duration-200 flex p-10 z-[10] " +
+      class={"fixed bottom-0 w-full right-0 duration-200 flex p-10 z-[10] " +
           (y > 0
               ? " opacity-full pointer-events-auto"
               : " pointer-events-none opacity-0")}

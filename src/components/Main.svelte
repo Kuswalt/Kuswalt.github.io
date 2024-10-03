@@ -6,7 +6,7 @@
     import Step from "./Step.svelte";
 
     // Array of project steps
-    let steps = [
+    let projects = [
         {
             name: "WeatherWise",
             icon: "fa-solid fa-cloud",
@@ -24,18 +24,18 @@
         },
     ];
 
-    // Array of benefits
-    let benefits = [
+    // Array of about sections
+    let about = [
         {
-            name: "a student developer",
+            name: "a Student Developer",
             description: "For the past years, I have gone through a series of programming languages and frameworks, which ranges from HTML and CSS to PHP, Typescript, JavaScript and Python. I begin with online courses and tutorials. Online tutorials are so wonderful; I get a kick building projects from scratch. As my journey goes on, I enjoy doing everything-challenging myself whether in creating my personal website or developing some small application then learning all about it. Curiosity is something that, I think, will propel me; perseverance has always been my key to success and I am excited to keep growing in this ever-changing field!",
         },
         {
-            name: "a backend developer",
+            name: "a Backend Developer",
             description: " I have experience working with technologies like SQL databases and RESTful API design. Recently, I developed a project that involved building a weather predition backend, which allowed me to implement features like weather forecasting and weather predictions. And am currently working on a project that involves building a webapp that allows users to ask questions to AI and get answers.",
         },
         {
-            name: "interested in video games",
+            name: "Interested in Video Games",
             description: "I have a passion for video games. From RPGs to indie titles, I love exploring the creativity and storytelling that games offer. Gaming has been a significant part of my life, inspiring me to analyze game design, mechanics, and user experience. I enjoy discussing the latest trends in the gaming industry and discovering hidden gems that push the boundaries of interactive storytelling.",
         },
     ];
@@ -56,7 +56,7 @@
         {
             name: "Facebook",
             icon: "fa-brands fa-facebook",
-            link: "https://www.facebook.com/chrisjen.roa",
+            // link: "https://www.facebook.com/chrisjen.roa",
             description: "Chris Jen Roa",
         },
     ];
@@ -111,14 +111,14 @@
             Curious to know more?
         </h6>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-                 Here's a bit more <span class="poppins text-blue-400">about</span> me.
+                 Here's more <span class="poppins text-blue-400">about</span> me.
             </h3>
         </div>
         <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
             I am . . .
         </p>
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
-            {#each benefits as benefit, index}
+            {#each about as item, index}
             
                 <div class="flex gap-6 sm:gap-8">
                     <p
@@ -128,9 +128,9 @@
                     </p>
                     <div class="flex flex-col gap-6 sm:gap-8">
                         <h3 class="text-2xl sm:text-3xl md:text-5xl press-start-font">
-                            {benefit.name}
+                            {item.name}
                         </h3>
-                        <p>{benefit.description}</p>
+                        <p  class="text-justify">{item.description}</p>
                     </div>
                 </div>
             {/each}
@@ -141,7 +141,7 @@
     <section class="py-20 lg:py-32 flex flex-col gap-24" id="projects">
         <div class="flex flex-col gap-2 text-center">
             <h6 class="text-large sm:text-xl md:text-2xl">
-                A few of my projects this recent times.
+                A Few of My Projects This Recent Times.
             </h6>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
                 Want to <span class="poppins text-blue-400">see</span> my works?
@@ -149,21 +149,21 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 source-code-pro">
-            {#each steps as step}
-                <Step {step}>
-                    <p>
-                        {#if step.name === "WeatherWise"}
+            {#each projects as project}
+                <Step {project}>
+                    <p class="text-justify">
+                        {#if project.name === "WeatherWise"}
                             WeatherWise is a webapp weather forecast with location detection that utilizes
                             <strong class="text-blue-400"> Angular Framework</strong>, <strong class="text-blue-400">RestApi PHP</strong> & <strong class="text-blue-400">OpenWeather API </strong>to show 5 hour, 5 day weather forecasts.
-                        {:else if step.name === "Formalytics"}
+                        {:else if project.name === "Formalytics"}
                             Formalytics is a group project for Application Development Course that utilizes <strong class="text-blue-400">Angular Framework</strong> & <strong class="text-blue-400">RestApi PHP</strong>. A webapp that allows a user to send questions to alumni to know their current life state and do analytical results based on the survey response.
-                        {:else if step.name === "AdvCalculator"}
+                        {:else if project.name === "AdvCalculator"}
                             AdvCalculator is a <strong class="text-blue-400">Python</strong> built calculator, that can do basic calculations to advanced calculations. This is a project made with my friend hizzCarlo.
                         {/if}
                     </p>
                     <div class="flex-1 flex justify-between gap-4 items-end">
                         <div class="ml-auto cursor-pointer hover:text-white duration-200 relative after:absolute after:top-0 after:h-full after:right-full after:bg-black after:w-full after:duration-200 hover:after:translate-x-full after:z-[-1] overflow-hidden">
-                            <a href={step.link} class="text-blue-400 hover:text-white">Go to &rarr;</a>
+                            <a href={project.link} class="text-blue-400 hover:text-white">Go to &rarr;</a>
                         </div>
                     </div>
                 </Step>
@@ -175,7 +175,7 @@
     <section class="py-20 lg:py-32 flex flex-col gap-24" id="social-info">
         <div class="flex flex-col gap-2 text-center">
             <h6 class="text-large sm:text-xl md:text-2xl">
-                Connect with me.
+                Connect with Me.
             </h6>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
                 Reach me on my <span class="poppins text-blue-400">social media</span>
@@ -184,7 +184,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             {#each socials as social}
-                <Step step={social}>
+                <Step project={social}>
                     {#if social.link}
                     <a href={social.link} class="text-blue-400 hover:text-white duration-200 relative after:absolute after:top-0 after:h-full after:left-0 after:w-0 after:duration-200 hover:after:w-full after:z-[-1] overflow-hidden" target="_blank" rel="noopener noreferrer">{social.description}</a>
                     {:else}

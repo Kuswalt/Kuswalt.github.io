@@ -8,6 +8,9 @@
         { name: "About me", link: "#about" },
         { name: "Projects", link: "#projects" },
     ];
+
+    // State to toggle dropdown
+    let isDropdownOpen = false;
 </script>
 
 <header
@@ -20,7 +23,7 @@
     <h1 class="font-medium">
         <b class="font-bold poppins">Chris Jen Ian D. Roa</b>
     </h1>
-    <!-- Navigation Tabs -->
+    <!-- Navigation Tabs for larger screens -->
     <div class="sm:flex items-center gap-4 hidden">
         {#each tabs as tab, index}
             <a
@@ -38,5 +41,27 @@
             />
             <h4 class="relative z-9">Get in touch</h4>
         </a>
+    </div>
+    <!-- Dropdown button for mobile view -->
+    <div class="sm:hidden relative">
+        <button on:click={() => isDropdownOpen = !isDropdownOpen} class="px-4 py-2 bg-black text-white rounded flex items-center gap-2 hover:text-blue-400 duration-200">
+            <i class="fas fa-bars"></i>
+        </button>
+        {#if isDropdownOpen}
+            <div class="absolute right-0 mt-2 w-48 bg-black border border-gray-200 rounded shadow-lg transition-transform transform origin-top-right duration-200 ease-out scale-100">
+                {#each tabs as tab, index}
+                    <a
+                        href={tab.link}
+                        class="block px-4 py-2 text-white hover:text-blue-400 duration-200"
+                        target={index === 2 ? "_blank" : ""}
+                    >
+                        {tab.name}
+                    </a>
+                {/each}
+                <a href="#social-info" class="block px-4 py-2 text-white hover:text-blue-400 duration-200">
+                    Get in touch
+                </a>
+            </div>
+        {/if}
     </div>
 </header>
