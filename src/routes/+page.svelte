@@ -20,6 +20,7 @@
                 <h4 class="relative z-9" style="font-family: 'Afacad Flux', sans-serif;">Connect with Me &rarr;</h4>
             </a>
         </div>
+        <!-- Image Section -->
         <div class="relative shadow-2xl grid place-items-center">
             <img src={"images/profileB1.jpg"} alt="img" class="object-cover z-[2] max-h-[70vh] rounded-full" />
         </div>

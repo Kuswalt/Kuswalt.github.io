@@ -1,5 +1,6 @@
 <script>
 
+    // Array of objects containing information about the user
     let about = [
         {
             name: "a Student Developer",
@@ -19,6 +20,7 @@
 
 <main class="flex flex-col flex-1 p-4">
     <section id="about" class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
+        <!-- Section header with decorative lines -->
         <div class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-700 py-4" >
             <h6 class="text-large sm:text-xl md:text- font-afacad">
                 Curious to know more?
@@ -30,6 +32,7 @@
         <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl font-afacad">
             I am . . .
         </p>
+        <!-- Loop through the 'about' array and display each item -->
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
             {#each about as item, index}
                 <!-- <div class="flex gap-6 sm:gap-8">

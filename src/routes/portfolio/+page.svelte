@@ -1,6 +1,7 @@
 <script>
     import Step from "$lib/Step.svelte";
 
+    // Array of project information
     let projects = [
         {
             name: "WeatherWise",
@@ -26,10 +27,11 @@
             A Few of My Projects This Recent Times.
         </h6>
         <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl font-afacad">
-            Want to <span class="poppins text-blue-400"style="font-family: 'Afacad Flux', sans-serif;">see</span> my works?
+            Want to <span class="poppins text-blue-400" style="font-family: 'Afacad Flux', sans-serif;">see</span> my works?
         </h3>
     </div>
 
+    <!-- Display each project with a description and link -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 source-code-pro">
         {#each projects as project}
             <Step {project}>

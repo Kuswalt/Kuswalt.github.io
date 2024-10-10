@@ -33,7 +33,7 @@
                 <p class="font-afacad">{tab.name}</p>
             </a>
         {/each}
-        <!-- Get in touch button -->
+        <!-- connect with me button -->
         <a href="/contact" class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-black text-white">
             <div
                 class="absolute top-0 right-full w-full h-full bg-blue-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
