@@ -24,10 +24,10 @@
 
 <section class="py-20 lg:py-32 flex flex-col gap-24" id="social-info">
     <div class="flex flex-col gap-2 text-center">
-        <h6 class="text-large sm:text-xl md:text-2xl"style="font-family: 'Afacad Flux', sans-serif;">
+        <h6 class="text-large sm:text-xl md:text-2xl font-afacad">
             Connect with Me.
         </h6>
-        <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl"style="font-family: 'Afacad Flux', sans-serif;">
+        <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl font-afacad">
             Reach me on my <span class="poppins text-blue-400"style="font-family: 'Afacad Flux', sans-serif;">social media</span>
         </h3>
     </div>

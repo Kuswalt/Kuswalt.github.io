@@ -22,10 +22,10 @@
 
 <section class="py-20 lg:py-32 flex flex-col gap-24" id="projects">
     <div class="flex flex-col gap-2 text-center">
-        <h6 class="text-large sm:text-xl md:text-2xl"style="font-family: 'Afacad Flux', sans-serif;">
+        <h6 class="text-large sm:text-xl md:text-2xl font-afacad">
             A Few of My Projects This Recent Times.
         </h6>
-        <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl"style="font-family: 'Afacad Flux', sans-serif;">
+        <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl font-afacad">
             Want to <span class="poppins text-blue-400"style="font-family: 'Afacad Flux', sans-serif;">see</span> my works?
         </h3>
     </div>
@@ -33,7 +33,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10 source-code-pro">
         {#each projects as project}
             <Step {project}>
-                <p class="text-justify" style="font-family: 'Afacad Flux', sans-serif;">
+                <p class="text-justify font-afacad">
                     {#if project.name === "WeatherWise"}
                         WeatherWise is a webapp weather forecast with location detection that utilizes
                         <strong class="text-blue-400"> Angular Framework</strong>, <strong class="text-blue-400">RestApi PHP</strong> & <strong class="text-blue-400">OpenWeather API </strong>to show 5 hour, 5 day weather forecasts.

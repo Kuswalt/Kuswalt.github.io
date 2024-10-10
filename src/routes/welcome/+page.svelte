@@ -7,12 +7,12 @@
     <!-- Introduction Section -->
     <section id="introPage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
         <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
-            <h5 class="font-semibold text-3xl sm:text-4xl md:text-5xl" style="font-family: 'Afacad Flux', sans-serif;">
-                Hello! I'm <span class="poppins text-blue-400 source-code-pro" style="font-family: 'Afacad Flux', sans-serif;">Chris Jen Ian D. Roa</span>
+            <h5 class="font-semibold text-3xl sm:text-4xl md:text-5xl font-afacad">
+                Hello! I'm <span class="poppins text-blue-400" style="font-family: 'Afacad Flux', sans-serif;">Chris Jen Ian D. Roa</span>
                 <br />A Student
                 <span class="poppins text-blue-400" style="font-family: 'Afacad Flux', sans-serif;">Developer</span>
             </h5>
-            <p class="text-base sm:text-lg md:text-xl" style="font-family: 'Afacad Flux', sans-serif;">
+            <p class="text-base sm:text-lg md:text-xl font-afacad">
                 A student at <span class="text-blue-400"style="font-family: 'Afacad Flux', sans-serif;"> Gordon College</span> in the  <span class="text-blue-400"style="font-family: 'Afacad Flux', sans-serif;"> Computer Studies</span> Department.
                 and I’m currently taking a course on <span class="text-blue-400"style="font-family: 'Afacad Flux', sans-serif;"> Bachelor of Science in Computer Science</span>
             </p>

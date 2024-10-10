@@ -9,7 +9,7 @@
         <i class={project.icon} />
     </div>
     <!-- Project Name -->
-    <h3 class="font-medium text-xl sm:text-2xl md:text-3xl"style="font-family: 'Afacad Flux', sans-serif;">
+    <h3 class="font-medium text-xl sm:text-2xl md:text-3xl font-afacad">
         {project.name}
     </h3>
     <!-- Slot for additional content -->

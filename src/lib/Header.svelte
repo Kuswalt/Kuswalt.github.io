@@ -21,17 +21,16 @@
 >
     <!-- Header Title -->
     <h1 class="font-medium">
-        <b class="font-bold poppins font-afacad">Chris Jen Ian D. Roa</b>
+        <b class="font-afacad">Chris Jen Ian D. Roa</b>
     </h1>
     <!-- Navigation Tabs for larger screens -->
     <div class="sm:flex items-center gap-4 hidden">
         {#each tabs as tab, index}
             <a
                 href={tab.link}
-                class="duration-200 hover:text-blue-400 font-afacad"
-                target=""
+                class="duration-200 hover:text-blue-400"
             >
-                <p>{tab.name}</p>
+                <p class="font-afacad">{tab.name}</p>
             </a>
         {/each}
         <!-- Get in touch button -->
@@ -54,7 +53,7 @@
                         href={tab.link}
                         class="block px-4 py-2 text-white hover:text-blue-400 duration-200"
                     >
-                        {tab.name}
+                        <p class="font-afacad">{tab.name}</p>
                     </a>
                 {/each}
                 <a href="/contact" class="block px-4 py-2 text-white hover:text-blue-400 duration-200 font-afacad">

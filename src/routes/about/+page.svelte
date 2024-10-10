@@ -20,14 +20,14 @@
 <main class="flex flex-col flex-1 p-4">
     <section id="about" class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
         <div class="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-700 py-4" >
-            <h6 class="text-large sm:text-xl md:text-"style="font-family: 'Afacad Flux', sans-serif;">
+            <h6 class="text-large sm:text-xl md:text- font-afacad">
                 Curious to know more?
             </h6>
-            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl"style="font-family: 'Afacad Flux', sans-serif;">
+            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl font-afacad">
                 Here's more <span class="poppins text-blue-400"style="font-family: 'Afacad Flux', sans-serif;">about</span> me.
             </h3>
         </div>
-        <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl" style="font-family: 'Afacad Flux', sans-serif;">
+        <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl font-afacad">
             I am . . .
         </p>
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
@@ -37,10 +37,10 @@
                         0{index + 1}
                     </p> -->
                     <div class="flex flex-col gap-6 sm:gap-8">
-                        <h3 class="text-2xl sm:text-3xl md:text-5xl" style="font-family: 'Afacad Flux', sans-serif;">
+                        <h3 class="text-2xl sm:text-3xl md:text-5xl font-afacad">
                             {item.name}
                         </h3>
-                        <p class="text-justify"style="font-family: 'Afacad Flux', sans-serif;">{item.description}</p>
+                        <p class="text-justify font-afacad">{item.description}</p>
                     </div>
                 
             {/each}
